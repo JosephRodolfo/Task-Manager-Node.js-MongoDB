@@ -44,3 +44,7 @@ const User = mongoose.model("User", {
      
       }
   });
+
+
+
+  module.exports = User
