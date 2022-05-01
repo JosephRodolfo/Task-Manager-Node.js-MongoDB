@@ -3,10 +3,6 @@ const Task = require("../models/task");
 const auth = require("../middleware/auth");
 const router = new express.Router();
 
-router.get("/test", (req, res) => {
-  res.send("From a new file");
-});
-
 router.post("/tasks", auth, async (req, res) => {
   const task = new Task({
     ...req.body,
